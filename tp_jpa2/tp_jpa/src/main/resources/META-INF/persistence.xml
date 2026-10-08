@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="FacturacionPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+
+        <class>com.tp.jpa.entities.Usuario</class>
+        <class>com.tp.jpa.entities.Contacto</class>
+        <class>com.tp.jpa.entities.Domicilio</class>
+        <class>com.tp.jpa.entities.Cliente</class>
+        <class>com.tp.jpa.entities.Rubro</class>
+        <class>com.tp.jpa.entities.Marca</class>
+        <class>com.tp.jpa.entities.Articulo</class>
+        <class>com.tp.jpa.entities.ListaPrecio</class>
+        <class>com.tp.jpa.entities.ListaPrecioArticulo</class>
+        <class>com.tp.jpa.entities.PuntoVenta</class>
+        <class>com.tp.jpa.entities.TipoMoneda</class>
+        <class>com.tp.jpa.entities.CondicionIva</class>
+        <class>com.tp.jpa.entities.FacturaVenta</class>
+        <class>com.tp.jpa.entities.FacturaVentaDetalle</class>
+
+        <properties>
+            <!-- Conexión JDBC a XAMPP MySQL -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/facturacion_db?createDatabaseIfNotExist=true&amp;useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value=""/> <!-- En XAMPP por defecto la clave es vacía -->
+
+            <!-- Dialecto para MariaDB en Linux -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+            
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
+    </persistence-unit>
+</persistence>

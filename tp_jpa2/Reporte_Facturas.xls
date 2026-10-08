@@ -1,0 +1,8 @@
+N° Factura	Fecha Emisión	Cliente	Condición IVA	Punto Venta	Importe Total	Cant. Ítems
+1001	07/10/2026	Empresa Cliente S.A.	Responsable Inscripto	Sucursal Central	8000,00	1
+1002	07/10/2026	Empresa Cliente S.A.	Responsable Inscripto	Sucursal Norte	15000,00	1
+1003	07/10/2026	Empresa Cliente S.A.	Responsable Inscripto	Sucursal Central	30000,00	1
+1004	07/10/2026	Empresa Cliente S.A.	Responsable Inscripto	Sucursal Norte	55000,00	1
+1005	07/10/2026	Empresa Cliente S.A.	Responsable Inscripto	Sucursal Central	90000,00	1
+1006	07/10/2026	Empresa Cliente S.A.	Responsable Inscripto	Sucursal Norte	120000,00	1
+2001	07/10/2026	Empresa Cliente S.A.	Responsable Inscripto	Sucursal Central	25000,00	1
